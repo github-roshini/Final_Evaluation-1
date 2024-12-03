@@ -4,17 +4,17 @@ const UserSchema = new mongoose.Schema({
         type : String,
         required : true
     },
-    phoneNumber : {
+        password :{
         type : String,
-         required : true 
+        required : true
     },
     email :{
         type : String,
         required : true
     },
-    password :{
+        phoneNumber : {
         type : String,
-        required : true
+         required : true 
     }
 })
 

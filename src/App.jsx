@@ -1,35 +1,52 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import './App.css'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Signup from './Components/Signup';
+import SignIn from './Components/SignIn';
+import Footer from './Components/Footer';
+import Home from './Components/Home';
+import Restaurants from './Components/Restaurants';
+import McDonalds from './Pages/McDonalds';
+import KFC from './Pages/KFC';
+import PapaJohns from './Pages/PapaJohns';
+import TexasChicken from './Pages/TexasChicken';
+import BurgerKing from './Pages/BurgerKing';
+import ShaurmaNo1 from './Pages/ShaurmaNo1';
+import Cart from './Pages/Cart';
+import Checkout from './Pages/Checkout';
+import Payment from './Pages/Payment';
+import OrderSuccessfull from './Pages/OrderSuccessfull';
+import Address from './Pages/Address';
+import AddressEdit from './Pages/AddressEdit';
+import Profile from './Pages/Profile';
+
 
 function App() {
-  const [count, setCount] = useState(0)
 
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    return (
+      <BrowserRouter>
+        <Routes> 
+           <Route path="/" element={<SignIn />} />
+           <Route path="/signup" element={<Signup/>} />
+           <Route path='/home' element= {<Home/>}/>
+           <Route path='/restaurants' element={<Restaurants/>}/>
+           <Route path='/McDonalds.com' element={<McDonalds/>}/>
+           <Route path='/KFC.com' element={<KFC/>}/>
+           <Route path='/PapaJohns.com' element={<PapaJohns/>}/>
+           <Route path='/TexasChicken.com' element={<TexasChicken/>}/>
+           <Route path='/BurgerKing.com' element={<BurgerKing/>}/>
+           <Route path='/ShaurmaNo1.com' element={<ShaurmaNo1/>}/>
+           <Route path='/Cart' element={<Cart/>}/>
+           <Route path='/Checkout' element={<Checkout/>}/>
+           <Route path='/Payment' element={<Payment/>}/>
+           <Route path='/Order Successful' element={<OrderSuccessfull/>}/>
+           <Route path='/Address' element={<Address/>}/>
+           <Route path='/Address Edit' element={<AddressEdit/>}/>
+           <Route path='/Profile' element={<Profile/>}/>
+        </Routes>
+        <Footer/>
+      </BrowserRouter>
+    );
 }
 
 export default App

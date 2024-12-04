@@ -1,42 +1,1187 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", "sans-serif";
+    overflow-x:hidden;
+    height:100%;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* Authentication page styling starts from here */
+
+.signup{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1600px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.signin{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1600px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.logo{
+    width: 200px;
+    margin-left: 150px;
 }
 
-.card {
-  padding: 2em;
+.img{
+    width: 800px;
+    height: 700px;
+    margin-top: 60px;
 }
 
-.read-the-docs {
-  color: #888;
+
+.form-fields{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-fields h2{
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+
+.form-fields .logo{
+    margin-bottom: 18px;
+}
+
+
+
+.leftside{
+    margin: 100px;
+}
+
+
+.form-fields input{
+    border-radius: 20px;
+    outline: none;
+    padding: 10px;
+    width: 480px;
+}
+
+
+ #email{
+    margin: 10px;
+}
+
+#phonenumber{
+    margin: 10px;
+}
+
+#name{
+    margin: 10px;
+}
+
+#password{
+    margin: 10px;
+}
+
+.form-fields button{ 
+    border-radius: 20px;
+    padding: 10px;
+    width: 500px;
+    margin: 20px 0px 30px 15px;
+    background: rgba(252, 138, 6, 1);
+    color: rgba(255, 255, 255, 1);
+    font-weight: 600;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+}
+
+
+.form-fields p{
+    text-align: center;
+}
+
+.error-msg{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: red;
+}
+
+/* Footer component styling starts from here */
+
+.footer{
+    width: 100%;
+    background: rgba(217, 217, 217, 1);
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+
+}
+
+.container .footer-img{
+    width: 300px;
+    padding-left: 10px;
+}
+
+.container img{
+    width: 240px;
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.below{
+    color:rgba(0, 0, 0, 1);
+    font-weight: 400;
+    font-size: .9rem;
+}
+
+.social-links h5{
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-top:0px;
+    position: relative;
+    right: 50px;
+}
+
+
+.social-links input{
+    border-radius: 25px;
+    padding: 15px;
+    position: relative;
+    left: 450px;
+}
+
+
+.social-links .field{
+    position: absolute;
+    width: 300px;
+    background: rgba(217, 217, 217, 1);
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: 400;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    outline-color: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+
+.social-links .button{
+    position: relative;
+    left:55%;
+    width: 140px;
+    text-align: center;
+    background: rgba(252, 138, 6, 1);
+    color: rgba(255, 255, 255, 1);
+    font-weight: 500;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.social-links a img{
+    width: 35px;
+    margin-left: 10px;
+    position: relative;
+    left: -30px;
+}
+
+
+.social-links p{
+    font-weight: 400;
+    font-size: 0.8rem;
+    position: relative;
+    left: -30px;
+}
+
+.info h5{
+    font-size:1.2rem;
+    font-weight: 700;
+    position: relative;
+    right: 60px;
+}
+
+.info a{
+    display: flex;
+    text-decoration: underline;
+    color: rgba(0, 0, 0, 1);
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 35px;
+    margin-bottom: 5px;
+    position: relative;
+    right: 60px;
+}
+
+.static-links h5{
+    font-size:1.2rem;
+    font-weight: 700;
+    position: relative;
+    right: 100px;
+}
+
+
+.static-links a{
+    display: flex;
+    text-decoration: underline;
+    color: rgba(0, 0, 0, 1);
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 35px;
+    margin-bottom: 5px;
+    position: relative;
+    right: 100px;
+}
+
+
+
+.end{
+    background: rgba(3, 8, 31, 1);
+    color: rgba(255, 255, 255, 1);
+    font-weight: 400;
+    padding: 30px;
+    width: 100%;
+    position: absolute;
+}
+
+.base-links a{
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+    position: relative;
+    top: 45px;
+    left: 55%;
+    margin: 10px;
+}
+
+
+/* Styling for the home page */
+
+.contain{
+    min-width: 1600px;
+    padding: 50px;
+}
+
+
+.offer {
+    background:rgba(251, 251, 251, 1);
+    width: 89%;
+    position:relative;
+    bottom: 50px;
+    padding: 5px;
+    font-size: .7rem;
+    font-weight: 700;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.offer a{
+    color:  rgba(252, 138, 6, 1);    
+    margin-right: 310px;
+}
+
+
+.offer img{
+    width: 20px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+
+.offer .cart{
+    background: rgba(2, 134, 67, 1);
+    color: rgba(255, 255, 255, 1);
+    padding: 20px 0px 8px 157px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.offer .My-cart{
+    position: relative;
+    right: 100px;
+}
+
+.offer .cart img{
+    width: 30px;
+    top: 5px;
+    right: 12%;
+    position: absolute;
+}
+
+
+.offer .cart .arrow{
+    position: absolute;
+    left: 96%;
+    width:34px;
+    top: 5px;
+}
+
+/* styling for the navbar items */
+
+.navitems .logo1{
+    width: 200px;
+    position: relative;
+    bottom: 15px;
+    right: 10px;
+    margin-bottom: 40px;
+}
+
+.navitems{
+    display: flex;
+}
+
+.navitems a{
+    color: rgba(0, 0, 0, 1);
+    font-weight: 500;
+    font-size: 1.2rem;
+    position: relative;
+    margin-left: 70px;
+    text-decoration: none;
+}
+
+
+.navitems .home{
+    background: rgba(252, 138, 6, 1);
+    border-radius: 20px;
+    width: 120px;
+    height: 40px;
+    margin-left:150px;
+    line-height: 35px;
+    text-align: center;
+    color:rgba(255, 255, 255, 1);
+}
+
+
+.navitems a img{
+    position: relative;
+    background: rgba(3, 8, 31, 1);
+    border-radius: 50%;
+    width: 35px;
+    top:-2%;
+    right: 30px;
+}
+
+.navitems .button{
+    color: rgba(255, 255, 255, 1);
+    width: 110px;
+    padding: 14px;
+    background: rgba(3, 8, 31, 1);
+    line-height: 5px;
+    position: absolute;
+    border-radius: 30px;
+    cursor: pointer;
+    top: -5px;
+    left: 2px;
+    height: 35px;
+}
+
+
+/* styling for the banner section */
+
+.banners{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background:rgba(251, 251, 251, 0.9);
+    border-radius: 20px;
+    height: 500px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.banner-container p{
+    font-weight: 400;
+    font-size: 1rem;
+    padding: 0px 0px 0px 10px;
+    margin: 10px;
+}
+
+.banner-container h2{
+    padding: 0px 0px 0px 20px;
+    font-weight: 600;
+    font-size: 3rem;
+    margin-top: 0px;
+    line-height: 45px;
+   }
+
+
+.banner-container h2 span{
+    color: rgba(252, 138, 6, 1);
+}
+
+.banner-container .statement{
+    padding: 0px 0px 10px 20px;
+    margin: 0px 0px 20px 0xp;
+}
+
+.banner-container .field{
+    position: absolute;
+    width: 300px;
+    background: rgba(255, 255, 255, 1);
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 400;
+    margin: 0px 0px 5px 25px;
+    padding: 15px 10px 15px 40px;
+    border-radius: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    outline: none;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+
+.banner-container .button{
+    position: relative;
+    left: 60%;
+    border-radius: 25px;
+    width: 180px;
+    padding: 15px 10px 17px 5px;
+    text-align: center;
+    background: rgba(252, 138, 6, 1);
+    color: rgba(255, 255, 255, 1);
+    font-weight: 700;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.banners .banner{
+    width:700px;
+    height: 450px;
+    position: absolute;
+    right: 25%;
+    top: 29.5%;
+    z-index: 1;
+}
+
+.banners .banner2{
+    width: 220px;
+    top: 100px;
+    height: 300px;
+    position: relative;
+    right:33%;
+}
+
+.banners .curve{
+    width: 550px;
+    position: relative;
+    right: -13.7%;
+    height: 450px;
+    top: 23px;
+}
+
+/* styling for the notifying popups */
+
+
+.logos .sidelogo1{
+    background: rgba(248, 248, 248, 1);
+    position: relative;     
+    left: 490px;
+    z-index: 1;
+    height: 50px;
+    padding: 10px;
+    bottom: -20px;
+    line-height: .5px;
+    width: 250px;
+    border-radius: 10px;
+}
+
+ .logos .sidelogo1 img{
+    width:60px;
+    position: relative;
+    left: 10px;
+}
+
+.sidelogo1 h6{
+    position: relative;
+    top: -10px;
+    left: 12px;
+}
+
+.logos .sidelogo2{
+    background: rgba(248, 248, 248, 1);
+    position: relative;     
+    left: 550px;
+    z-index: 1;
+    width: 250px;
+    border-radius: 10px;
+    padding: 10px;
+    line-height: 1px;
+    top: 60px;
+    height: 50px;
+}
+
+
+.sidelogo2 h6 img{
+    max-width: 20px;
+    position: relative;
+    top: 6px;
+}
+
+.sidelogo2 h6{
+    position: relative;
+    top: -8px;
+    left: 2px;
+}
+
+.sidelogo2 img{
+    width:60px;
+}
+
+
+.sidelogo3 h6{
+    position: relative;
+    top: -8px;
+    left: 2px;
+}
+
+.sidelogo3 img{
+    width:60px;
+}
+
+
+.logos .sidelogo3{
+    background: rgba(248, 248, 248, 1);
+    position: relative;     
+    left: 500px;
+    z-index: 1;
+    width: 250px;
+    padding: 10px;
+    border-radius: 10px;
+    line-height: 1px;
+    top:110px;
+    height: 50px;
+}
+
+
+.sidelogo1 p{
+    font-size: .7rem;
+    position: relative;
+    left: 10px;
+    top: -14px;
+}
+
+ .sidelogo1 h6{
+    font-size: .6rem;
+}
+
+ .sidelogo2 p{
+    font-size: .7rem;
+    position: relative;
+    top: -12px;
+}
+
+.sidelogo2 h6{
+    font-size: .6rem;
+}
+
+ .sidelogo3 p{
+    font-size: .7rem;
+    position: relative;
+    top: -15px;
+    left: 2px;
+}
+
+
+.sidelogo3 h6{
+    font-size: .6rem;
+}
+
+
+/* "Exclusive deals" section styling starts here */
+
+
+.deal-section{
+    display: flex;
+    padding-top: 50px;
+    align-items: center;
+}
+
+.deal-section h3{
+    font-weight: 700;
+    font-size: 2rem;
+    position: relative;
+    top: 0px;
+}
+
+.deal-section a{
+    text-align: center;
+    margin-right:30px; 
+    font-weight: 400;   
+    color: rgba(0, 0, 0, 1);
+    text-decoration: none;
+    font-size: 1rem ;
+    position: relative;
+    right: 150px;
+}
+
+
+.deal-section .vegan{
+    margin-left: auto;
+}
+
+
+.deal-section .pizza{
+    border: 1px solid rgba(252, 138, 6, 1);
+    color: rgba(252, 138, 6, 1);
+    font-weight: 600;
+    padding: 10px;
+    width: 200px;
+    border-radius: 30px;
+}
+
+.dishes img{
+    padding: 10px;
+    width: 460px;
+    cursor: pointer;
+}
+
+
+
+/* Category section styling starts from here(Home page) */
+
+
+.category h3{
+    font-weight: 700;
+    font-size: 2rem;
+    position: relative;
+    top: 30px;
+    left: 10px;
+}
+
+.various-items{
+    display: flex;
+}
+
+
+.various-items img{
+    cursor: pointer; 
+    position: relative; 
+    top: 50px;
+    height: 200px;
+    padding-right: 10px;
+}
+
+
+.various-items h6 {
+    position: absolute;
+    background: rgba(245, 245, 245, 1);
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 50px;
+    cursor: pointer;
+}
+
+.item1 h6 {
+    width: 208px;
+    top: -10px;
+    height: 80px;
+    position: relative;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding-left: 25px;
+}
+
+
+.item2 h6 {
+    width: 205px;
+    top: -10px;
+    height: 80px;
+    position: relative;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding-left: 30px;
+}
+
+
+.item3 h6 {
+    width: 208px;
+    top: -10px;
+    height: 80px;
+    position: relative;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding-left: 25px;
+}
+
+
+.item4 h6 {
+    width: 204px;
+    top: -10px;
+    height: 80px;
+    position: relative;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding-left: 30px;
+}
+
+
+.item5 h6 {
+    width: 205px;
+    top: -10px;
+    height: 80px;
+    position: relative;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding-left: 30px;
+}
+
+
+.item6 h6 {
+    width: 205px;
+    top: -10px;
+    height: 80px;
+    position: relative;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding-left: 30px;
+}
+
+
+.item1 p{
+    position: relative;
+    top: -95px;
+    padding-left: 25px;
+    color: rgba(252, 138, 6, 1);
+    cursor: pointer;
+}
+
+.item2 p{
+    position: relative;
+    top: -95px;
+    padding-left: 30px;
+    color: rgba(252, 138, 6, 1);
+    cursor: pointer;
+}
+
+.item3 p{
+    position: relative;
+    top: -95px;
+    padding-left: 25px;
+    color: rgba(252, 138, 6, 1);
+    cursor: pointer;
+}
+
+.item4 p{
+    position: relative;
+    top: -95px;
+    padding-left: 30px;
+    color: rgba(252, 138, 6, 1);
+    cursor: pointer;
+}
+
+.item5 p{
+    position: relative;
+    top: -95px;
+    padding-left: 28px;
+    color: rgba(252, 138, 6, 1);
+    cursor: pointer;
+}
+
+
+.item6 p{
+    position: relative;
+    top: -95px;
+    padding-left: 30px;
+    color: rgba(252, 138, 6, 1);
+    cursor: pointer;
+}
+
+/* Restaurant picks styling starts from here */
+
+
+ h3{
+    font-weight: 700;
+    font-size: 2rem;
+    position: relative;
+    top: -60px;
+}
+
+
+.restaurant-images img{
+    width: 150px;
+    height: 150px;
+    padding-right: 40px;
+    position: relative;
+    top: -40px;
+    left: 40px;
+    margin: 0px 20px 0px 20px;
+    cursor: pointer;
+}
+
+/* Ordering message-displayed styling starts from here */
+
+.order-banner{
+    padding: 10px;
+    height: 480px;
+    background: rgba(224, 225, 220, 0.9);
+    position: relative;
+    top: 60px;
+    left: 50px;
+    width: 1350px;
+    border-radius: 15px;
+    padding-bottom: 0px;
+
+}
+
+.order-banner .couple-banner{
+    width: 650px;
+    height: 540px;
+    padding-left: 30px;
+    position: relative;
+    left: -40px;
+    z-index: 1;
+    top: -60px;
+}
+
+
+.app-badges .icons{
+    position: relative;
+    bottom: 250px;
+    left: 850px;
+    width: 350px;
+}
+
+
+.app-badges .order-logo{
+    position: relative;
+    left: 700px;
+    bottom: 390px;
+    width: 230px;
+}
+
+
+
+.app-badges span{
+    position: relative;
+    left: 700px;
+    bottom: 390px;
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+
+.order-banner .span-element{
+    position: absolute;
+    bottom: 230px;
+    height: 40px;
+    width: 750px;
+    background: rgba(3, 8, 31, 1);
+    color: rgba(252, 138, 6, 1);
+    padding: 20px;
+    left: 530px;
+    border-radius:50px;
+    font-weight: 500;
+    font-size: 3.5rem;
+}
+
+
+.span-element p{
+    position: absolute;
+    left: 120px;
+    top: -60px;
+}
+
+.span-element .instant{
+    color: rgba(255, 255, 255, 1);
+    position: relative;
+    left: 220px;
+    top:-80px;
+    text-align: center;
+    
+}
+
+.app-badges p{
+    position: relative;
+    bottom: 250px;
+    left: 750px;
+    color: rgba(0, 0, 0, 1);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+
+
+/* Second-section styling starts from here */
+
+.advertise img{
+    width: 680px;
+    padding: 0px 10px 10px 5px;
+    margin-top: 0px;
+    position: relative;
+    bottom: 100px ;
+    cursor: pointer;
+    left: 50px;
+}
+
+
+
+/* last-section styling starts from here */
+
+
+.stats{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    background: rgba(252, 138, 6, 1);
+    width: 87%;
+    position: relative;
+    left: 15px;
+    border-radius: 10px;
+    height: 100px;
+}
+
+.stats p{
+    font-size: 3rem;
+    font-weight: 300;
+    width: 250px;
+    position: relative;
+    left: 30px;
+    bottom: 50px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.stats h6{
+    position: relative;
+    left: 0px;
+    bottom: 100px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 1);
+}
+
+
+
+.stat p{
+    position: relative;
+    left: -20px;
+}
+
+.analytics p{
+    position: relative;
+    left: 50px;
+}
+
+.analytic h6{
+    position: relative;
+    left: 55px;
+}
+
+
+
+/* Information about the page-styling starts from here */
+
+
+.know-container{
+    background: rgba(217, 217, 217, 1);
+    border-radius: 15px;
+    width: 87%;
+    position: relative;
+    left: 50px;
+    height:700px;
+}
+
+
+.know-container h3{
+    font-weight: 700;
+    font-size: 2rem;
+    position: relative;
+    top: 80px;
+    padding-left:80px;
+    height:500px;
+}
+
+
+.know-container a{
+    position: relative;
+    bottom: 450px;
+    margin: 10px;
+    left: 650px;
+    color: rgba(0, 0, 0, 1);
+    text-decoration: none;
+}
+
+
+.know-container .faq{
+    font-weight: 700;
+    font-size: 1.2rem;
+    border: 1px solid rgba(252, 138, 6, 1);
+    border-radius: 100px;
+    padding: 20px;
+}
+
+/* the process of delivering-styling starts from here */
+
+.info-container{
+    background: rgba(255, 255, 255, 1);
+    width: 1200px;
+    position: relative;
+    bottom: 550px;
+    left: 100px;
+    padding: 30px;
+    height: 400px;
+    border-radius: 15px;
+}
+
+.info-container h5{
+    font-weight: 700;
+    background: rgba(252, 138, 6, 1);
+    font-size: 1.2rem;
+    border-radius: 50px;
+    padding: 10px;
+    width: 300px;
+    text-align: center;
+    margin-left: 50px;
+}
+
+.info-container h6{
+    position: relative;
+    left: 50px;
+    font-weight: 700;
+    font-size: 1rem;
+
+}
+
+.info-container .track{
+    position: relative;
+    left: 70px;
+}
+
+.info-container .next-line{
+    position: relative;
+    left: 70px;
+}
+
+.info-container .next-line p{
+    position: relative;
+    left: 45px;
+    line-height: 2px;
+}
+
+
+.bell-icon {
+    position: relative;
+    bottom: 960px;
+    left: 580px;
+    background: rgba(217, 217, 217, 1);
+    width: 200px;
+    padding: 20px;
+    height: 250px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.bell-icon h6{
+    position: relative;
+    bottom: 25px;   
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+
+.bell-icon p{
+    position: relative;
+    bottom: 50px;
+    text-wrap: balance;
+    font-weight: 500;
+    font-size: 1rem;
+
+}
+
+.bell-icon img{
+    position: relative;
+    bottom: 40px;
+    width: 100px;
+}
+
+.food-items{
+    position: relative;
+    bottom: 1250px;
+    left:835px;
+    background: rgba(217, 217, 217, 1);
+    width: 210px;
+    height: 250px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+
+.food-items h6{
+    position: relative;
+    bottom: 25px;   
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+
+.food-items p{
+    position: relative;
+    bottom: 50px;
+    text-wrap: balance;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+
+
+.food-items img{
+    position: relative;
+    bottom:50px;
+    width: 100px;
+}
+
+.order-update{
+    position: relative;
+    bottom: 1540px;
+    right: -1100px;
+    background: rgba(217, 217, 217, 1);
+    width: 200px;
+    padding: 20px;
+    height: 250px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.order-update h6{
+    position: relative;
+    bottom: 25px;   
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.order-update p{
+    position: relative;
+    bottom:50px;
+    text-wrap: balance;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.order-update img{
+    position: relative;
+    bottom: 50px;
+    width: 100px;
+}
+
+
+.sentences{
+    font-weight: 400;
+    font-size: 1rem;
+    position: relative;
+    bottom: 1530px;
+    left: 650px;
+    color: rgba(3, 8, 31, 1);
+    line-height: 10px;
+}
+
+.sentences .last-sentence{
+    position: relative;
+    left: 180px;
+}
+
+/* Images of different items styling starts from here */
+
+.ff{
+    position: relative;
+    bottom :50px;
 }
